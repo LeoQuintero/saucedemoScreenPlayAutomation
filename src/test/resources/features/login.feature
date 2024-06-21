@@ -1,4 +1,8 @@
+#Autor Edwin Quintero
+
+@OrderedTests
 Feature: Login functionality
+
 
   Scenario: Successful login with valid credentials
     Given the user is on the Sauce Demo login page
