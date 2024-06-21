@@ -13,3 +13,11 @@ c
 3src/main/java/com/co/choucair/models/LoginPage.java,a\6\a6ae047cc092a74164ab6f292fab678bdf00cbc9
 v
 Fsrc/test/java/com/co/choucair/stepdefinitions/LoginStepDefinition.java,d\7\d7cc29a44f198a517da26bbd0c3c3612f33c560f
+h
+8src/main/java/com/co/choucair/tasks/VerifyInventory.java,5\6\561161670d2dddcea86a8cc2bda7ad6db027f6a6
+l
+<src/main/java/com/co/choucair/questions/VerifyInventory.java,1\6\168ed85ee235ce50a625635e301a1417f1158861
+k
+;src/main/java/com/co/choucair/userinterfaces/LoginPage.java,4\5\45dd5f987a4a8e1fdfc2440e6f086e4a2b36b7f8
+o
+?src/main/java/com/co/choucair/userinterfaces/InventoryPage.java,2\7\2787b678acd9f62470aa7219355c847af05f5cc6

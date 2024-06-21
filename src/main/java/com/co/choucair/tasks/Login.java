@@ -1,14 +1,13 @@
 package com.co.choucair.tasks;
 
-import com.co.choucair.models.LoginPage;
+import com.co.choucair.userinterfaces.LoginPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
-import net.serenitybdd.screenplay.actions.EnterValue;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
-import static com.co.choucair.models.LoginPage.*;
+import static com.co.choucair.userinterfaces.LoginPage.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 

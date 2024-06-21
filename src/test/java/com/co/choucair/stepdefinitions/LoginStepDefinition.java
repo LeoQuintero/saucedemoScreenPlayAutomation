@@ -1,5 +1,6 @@
 package com.co.choucair.stepdefinitions;
 
+import com.co.choucair.questions.VerifyInventory;
 import com.co.choucair.tasks.Login;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
@@ -8,6 +9,8 @@ import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static com.co.choucair.utils.GlobalData.*;
+import static net.serenitybdd.screenplay.GivenWhenThen.*;
+import static org.hamcrest.Matchers.is;
 
 public class LoginStepDefinition {
     @Before
@@ -23,19 +26,17 @@ public class LoginStepDefinition {
     public void theUserEntersTheUsernameAndThePassword(String username, String password) {
         OnStage.theActorInTheSpotlight().attemptsTo(Login.withCredentials(username,password));
     }
-    @And("the user clicks on the login button")
-    public void theUserClicksOnTheLoginButton() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
-    }
+
     @Then("the user should be redirected to the inventory page")
     public void theUserShouldBeRedirectedToTheInventoryPage() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+        OnStage.theActorInTheSpotlight().should(
+                seeThat("the page title is correct", VerifyInventory.withTitle("Products"), is(true))
+        );
     }
     @And("the user should see the title {string}")
-    public void theUserShouldSeeTheTitle(String string) {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+    public void theUserShouldSeeTheTitle(String expectedTitle) {
+        OnStage.theActorInTheSpotlight().should(
+                seeThat("the page title is correct", VerifyInventory.withTitle(expectedTitle), is(true))
+        );
     }
 }
