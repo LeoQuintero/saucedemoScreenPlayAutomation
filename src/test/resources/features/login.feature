@@ -1,6 +1,6 @@
 #Autor Edwin Quintero
 
-@OrderedTests
+
 Feature: Login functionality
 
 @Order(1)

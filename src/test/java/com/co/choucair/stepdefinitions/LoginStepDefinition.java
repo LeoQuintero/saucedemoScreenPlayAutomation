@@ -2,6 +2,7 @@ package com.co.choucair.stepdefinitions;
 
 import com.co.choucair.questions.VerifyInventory;
 import com.co.choucair.tasks.Login;
+import com.co.choucair.utils.SessionState;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import net.serenitybdd.screenplay.actions.Open;
@@ -25,6 +26,7 @@ public class LoginStepDefinition {
     @When("the user enters the username {string} and the password {string}")
     public void theUserEntersTheUsernameAndThePassword(String username, String password) {
         OnStage.theActorInTheSpotlight().attemptsTo(Login.withCredentials(username,password));
+        SessionState.setLoggedIn(true);
     }
 
     @Then("the user should be redirected to the inventory page")

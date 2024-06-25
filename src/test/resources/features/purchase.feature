@@ -1,5 +1,9 @@
+#Autor Edwin Quintero
+
+@OrderedTests
 Feature: Purchase functionality
 
+  @Order(2)
   Scenario: Successfully purchase two products
     Given the user is logged in with the username "standard_user" and the password "secret_sauce"
     When the user adds the first product to the cart
