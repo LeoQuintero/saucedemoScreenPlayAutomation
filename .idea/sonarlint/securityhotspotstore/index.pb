@@ -19,3 +19,7 @@ y
 Isrc/test/java/com/co/choucair/stepdefinitions/PurchaseStepDefinition.java,2\e\2e8e45b806b9ab8523505eef987cb0be4076b6f7
 e
 5src/main/java/com/co/choucair/utils/SessionState.java,5\c\5ca20bb8145e1120afcea75b56b8c1bc45b9b526
+j
+:src/main/java/com/co/choucair/userinterfaces/CartPage.java,8\f\8f0f4ea787fbc22db3d29dd2eb4e94a65c16661c
+i
+9src/main/java/com/co/choucair/tasks/PurchaseProducts.java,4\6\4668884fbe5c6005cd1a31d7b8573145fa333fa2
