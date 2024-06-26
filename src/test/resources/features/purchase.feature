@@ -1,6 +1,6 @@
 #Autor Edwin Quintero
 
-@OrderedTests
+@OrderedTests @Purchase
 Feature: Purchase functionality
 
   @Order(2)

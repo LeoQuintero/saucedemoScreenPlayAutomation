@@ -5,6 +5,8 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.Enter;
+import net.serenitybdd.screenplay.matchers.WebElementStateMatchers;
+import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -73,10 +75,20 @@ public class PurchaseProducts implements Task {
                 actor.attemptsTo(Click.on(CartPage.CHECKOUT_BUTTON));
                 break;
             case "Continue":
-                actor.attemptsTo(Click.on(CartPage.CONTINUE_BUTTON));
+                System.out.println("Attempting to click on the Continue button...");
+                actor.attemptsTo(
+                        WaitUntil.the(CartPage.CONTINUE_BUTTON, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(),
+                        Click.on(CartPage.CONTINUE_BUTTON)
+                );
+                System.out.println("Clicked on the Continue button.");
                 break;
             case "Finish":
-                actor.attemptsTo(Click.on(CartPage.FINISH_BUTTON));
+                System.out.println("Attempting to click on the Finish button...");
+                actor.attemptsTo(
+                        WaitUntil.the(CartPage.FINISH_BUTTON, WebElementStateMatchers.isVisible()).forNoMoreThan(10).seconds(),
+                        Click.on(CartPage.FINISH_BUTTON)
+                );
+                System.out.println("Clicked on the Finish button.");
                 break;
             case "enterUserInfo":
                 System.out.println("Entering user information:");
@@ -86,8 +98,7 @@ public class PurchaseProducts implements Task {
                 actor.attemptsTo(
                         Enter.theValue(firstName).into(CartPage.FIRST_NAME_FIELD),
                         Enter.theValue(lastName).into(CartPage.LAST_NAME_FIELD),
-                        Enter.theValue(postalCode).into(CartPage.POSTAL_CODE_FIELD),
-                        Click.on(CartPage.CONTINUE_BUTTON)
+                        Enter.theValue(postalCode).into(CartPage.POSTAL_CODE_FIELD)
                 );
                 break;
             default:

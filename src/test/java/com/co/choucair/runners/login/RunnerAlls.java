@@ -8,11 +8,9 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/test/resources/features/",
         glue = "com.co.choucair.stepdefinitions",
-        tags = "@Filter",
+        tags = "@OrderedTests",
         plugin = {"pretty", "json:target/cucumber-reports/cucumber.json"},
         snippets = CucumberOptions.SnippetType.CAMELCASE
 )
-
-public class LoginRunner {
-
+public class RunnerAlls {
 }

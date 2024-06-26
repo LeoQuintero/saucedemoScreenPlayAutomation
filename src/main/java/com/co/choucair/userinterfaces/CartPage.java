@@ -11,8 +11,7 @@ public class CartPage {
     public static final Target FIRST_NAME_FIELD = Target.the("first name field").located(By.id("first-name"));
     public static final Target LAST_NAME_FIELD  = Target.the("last name field").located(By.id("last-name"));
     public static final Target POSTAL_CODE_FIELD = Target.the("postal code field").located(By.id("postal-code"));
-    public static final Target CONTINUE_BUTTON = Target.the("Continue button").located(By.cssSelector(".btn_primary cart_button"));
-    public static final Target FINISH_BUTTON  = Target.the("finish button").located(By.cssSelector(".btn_action cart_button"));
+    public static final Target CONTINUE_BUTTON = Target.the("Continue button").located(By.xpath("(//*/input[contains(@class,\'btn_primary cart_button\')])"));
+    public static final Target FINISH_BUTTON = Target.the("finish button").located(By.xpath("//a[@class='btn_action cart_button' and contains(text(), 'FINISH')]"));
     public static final Target ORDER_CONFIRMATION_MESSAGE = Target.the("order confirmation message").located(By.cssSelector(".complete-header"));
-
 }

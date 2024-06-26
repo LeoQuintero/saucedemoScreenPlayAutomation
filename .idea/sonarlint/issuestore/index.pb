@@ -23,3 +23,7 @@ j
 :src/main/java/com/co/choucair/userinterfaces/CartPage.java,8\f\8f0f4ea787fbc22db3d29dd2eb4e94a65c16661c
 i
 9src/main/java/com/co/choucair/tasks/PurchaseProducts.java,4\6\4668884fbe5c6005cd1a31d7b8573145fa333fa2
+Å
+Qsrc/test/java/com/co/choucair/stepdefinitions/ProductFilteringStepDefinition.java,2\2\229d9e63f2dfd91269d6560e098fa2cca0fd0818
+k
+;src/test/java/com/co/choucair/runners/login/RunnerAlls.java,1\8\18ec0aac5122293e1c6b7dafda9d0cf1bfe02cc1

@@ -1,3 +1,6 @@
+#Autor Edwin Quintero
+
+@Filter
 Feature: Product filtering
 
   Scenario: Successfully filter products by price (low to high)
